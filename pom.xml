@@ -25,14 +25,11 @@
       <plugin>
         <groupId>com.google.cloud.tools</groupId>
         <artifactId>jib-maven-plugin</artifactId>
-        <version>0.9.7</version>
+        <version>0.9.8</version>
         <configuration>
           <from>
             <image>jcrossley3/java8action</image>
           </from>
-          <to>
-            <image>jcrossley3/hello-action</image>
-          </to>
           <container>
             <mainClass>hello.Hello</mainClass>
           </container>

@@ -31,7 +31,14 @@
             <image>jcrossley3/java8action</image>
           </from>
           <container>
-            <mainClass>hello.Hello</mainClass>
+            <entrypoint>
+              <cmd>java</cmd>
+              <opt>-Dfile.encoding=UTF-8</opt>
+              <opt>-Xshareclasses:cacheDir=/javaSharedCache,readonly</opt>
+              <opt>-Xquickstart</opt>
+              <opt>-jar</opt>
+              <arg>/javaAction/build/libs/javaAction-all.jar</arg>
+            </entrypoint>
           </container>
         </configuration>
       </plugin>

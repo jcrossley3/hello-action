@@ -9,6 +9,8 @@ entrypoint in that config.
 
 After installing the [jib build
 template](https://github.com/knative/build-templates/tree/master/jib)
+and [your DockerHub
+credentials](https://github.com/jcrossley3/openwhisk-scratch/blob/master/build-creds.yaml)
 to your knative cluster, you can then apply [hello.yaml](hello.yaml)
 to deploy the hello service.
 

@@ -32,7 +32,7 @@
           </from>
           <container>
             <mainClass>projectodd.Proxy</mainClass>
-            <args>hello.Hello#main</args>
+            <args>hello.Hello::main</args>
           </container>
         </configuration>
       </plugin>

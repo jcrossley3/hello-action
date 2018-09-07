@@ -28,17 +28,11 @@
         <version>0.9.10</version>
         <configuration>
           <from>
-            <image>jcrossley3/java8action</image>
+            <image>jcrossley3/undertow-proxy</image>
           </from>
           <container>
-            <entrypoint>
-              <cmd>java</cmd>
-              <opt>-Dfile.encoding=UTF-8</opt>
-              <opt>-Xshareclasses:cacheDir=/javaSharedCache,readonly</opt>
-              <opt>-Xquickstart</opt>
-              <opt>-jar</opt>
-              <arg>/javaAction/build/libs/javaAction-all.jar</arg>
-            </entrypoint>
+            <mainClass>projectodd.Proxy</mainClass>
+            <args>hello.Hello#main</args>
           </container>
         </configuration>
       </plugin>

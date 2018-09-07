@@ -10,7 +10,7 @@ spec:
         source:
           git:
             url: https://github.com/jcrossley3/hello-action.git
-            revision: master
+            revision: undertow
         template:
           name: jib-maven
           arguments:
@@ -20,8 +20,3 @@ spec:
         spec:
           container:
             image: *image
-            env:
-            - name: ACTION_JAR_PATH
-              value: /app/classes/
-            - name: ACTION_JAR_MAIN
-              value: hello.Hello

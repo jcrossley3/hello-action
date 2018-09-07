@@ -23,11 +23,11 @@
         <version>0.9.10</version>
         <configuration>
           <from>
-            <image>jcrossley3/projectodd-proxy</image>
+            <image>jcrossley3/undertowfn</image>
           </from>
           <container>
-            <mainClass>projectodd.Proxy</mainClass>
-            <args>hello.Hello::main</args>
+            <mainClass>undertowfn.Proxy</mainClass>
+            <args>hello.Hello::optionallyCanBeOverriddenInYaml</args>
           </container>
         </configuration>
       </plugin>

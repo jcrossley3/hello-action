@@ -1,11 +1,12 @@
-An example using [Jib](https://github.com/GoogleContainerTools/jib) to
-deploy an OpenWhisk action -- using a
-[slightly-hacked](https://github.com/jcrossley3/incubator-openwhisk-runtime-java/tree/knative)
-runtime -- to a Knative cluster.
+A failed attempt using
+[Jib](https://github.com/GoogleContainerTools/jib) to deploy an Fn
+action -- using a [small Undertow
+proxy](https://github.com/jcrossley3/undertowfn) -- to a Knative
+cluster.
 
 Note the `jib-maven-plugin` configuration in the [pom.xml](pom.xml)
-that uses our runtime as a base image. We must also replicate its
-entrypoint in that config.
+that uses our runtime as a base image. We can specify a default Fn
+there which may be overridden by the yaml referencing it.
 
 After installing the [jib build
 template](https://github.com/knative/build-templates/tree/master/jib)
